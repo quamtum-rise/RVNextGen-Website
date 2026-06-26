@@ -9,7 +9,11 @@
   <meta property="og:description" content="English-led AI storytelling, animation and portfolio programs for young creators. 15th July cohort now open." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://rvgen.ai" />
+  <meta property="og:image" content="https://rvgen.ai/assets/raayan-hero.webp" />
+  <meta property="og:image:alt" content="RVNextGEN Creator Labs cinematic AI storytelling program" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://rvgen.ai/assets/raayan-hero.webp" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g' cx='30%25' cy='28%25' r='80%25'%3E%3Cstop stop-color='%23fff3bb'/%3E%3Cstop offset='55%25' stop-color='%23f4c15b'/%3E%3Cstop offset='100%25' stop-color='%238b5410'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g)'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial' font-size='16' font-weight='800' fill='%231b1105'%3ERV%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Marcellus&display=swap" rel="stylesheet">
@@ -61,8 +65,9 @@
     img { display: block; max-width: 100%; }
     button, input, select, textarea { font: inherit; }
     .wrap { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; position: relative; z-index: 1; }
-    .section { padding: 48px 0; position: relative; z-index: 1; scroll-margin-top: 112px; }
-    .section.tight { padding-top: 24px; }
+    .section { padding: 56px 0; position: relative; z-index: 1; scroll-margin-top: 124px; }
+    .section.tight { padding-top: 34px; }
+    .meta-section { padding-top: 72px; padding-bottom: 72px; }
 
     .nav {
       position: sticky;
@@ -103,6 +108,8 @@
     .actions, .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
     .pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
     .pill { display: inline-flex; align-items: center; min-height: 28px; border: 1px solid rgba(255,255,255,.12); border-radius: 999px; padding: 7px 11px; background: rgba(255,255,255,.045); color: var(--muted); font-size: 10.5px; font-weight: 900; letter-spacing: .11em; text-transform: uppercase; }
+    .trust-strip { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .trust-strip span { display: inline-flex; align-items: center; min-height: 28px; border: 1px solid rgba(244,193,91,.22); border-radius: 999px; padding: 7px 11px; background: rgba(244,193,91,.07); color: rgba(247,234,211,.78); font-size: 10.5px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
 
     .hero { min-height: 540px; display: grid; align-items: center; padding: 42px 0 18px; }
     .hero-grid { display: grid; grid-template-columns: .88fr 1.12fr; gap: 54px; align-items: center; }
@@ -166,6 +173,10 @@
     .image-panel img { border-radius: 22px; width: 100%; object-fit: cover; }
     .raayan-img img { aspect-ratio: 4 / 3; }
     .lab-ui img { aspect-ratio: 16 / 9; }
+    .meta-stage { min-height: 320px; display: grid; align-items: end; background: linear-gradient(180deg, rgba(3,4,5,.02), rgba(3,4,5,.84)), url('assets/lab-ui.webp') center/cover; }
+    .meta-copy { max-width: 560px; padding: 24px; border-radius: 22px; background: rgba(3,4,5,.78); border: 1px solid rgba(244,193,91,.26); backdrop-filter: blur(12px); box-shadow: 0 18px 52px rgba(0,0,0,.36); }
+    .meta-copy strong { display: block; font-family: Marcellus, Georgia, serif; font-size: clamp(26px, 2.2vw, 36px); line-height: 1.05; margin-bottom: 10px; }
+    .meta-copy span { color: var(--muted); }
     .stat-list { display: grid; gap: 10px; margin-top: 20px; }
     .stat { display: grid; grid-template-columns: 110px 1fr; gap: 16px; align-items: center; padding: 13px 15px; border: 1px solid rgba(255,255,255,.1); border-radius: 16px; background: rgba(255,255,255,.04); }
     .stat strong { color: var(--gold); font-size: 11px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
@@ -239,6 +250,11 @@
       form { grid-template-columns: 1fr; }
       .feature-panel, .price-card, .form-card, .coming { padding: 22px; }
       .price { font-size: 38px; }
+      .meta-section { padding-top: 58px; padding-bottom: 58px; }
+      .meta-stage { min-height: 360px; align-items: end; background-position: center; }
+      .meta-copy { max-width: 100%; }
+      .founder-visual { display: none; }
+      .founder-copy { padding: 24px; }
     }
   </style>
 </head>
@@ -264,7 +280,7 @@
         <section>
           <div class="eyebrow">English-led AI storytelling · Values · Future skills</div>
           <h1>Cinematic AI. Ancient values. Future creators.</h1>
-          <p class="lead">RVNextGEN UAE runs an English-led AI filmmaking and animation program for young creators, turning stories, mythology and impact ideas into films, portfolios and pitch decks.</p>
+          <p class="lead">RVNextGEN UAE runs an English-led cinematic AI filmmaking and animation program for young creators, turning stories, mythology and impact ideas into portfolio-ready films and pitch decks.</p>
           <div class="hero-actions">
             <a class="btn primary" href="#apply">Apply for Creator Labs</a>
             <a class="btn gold" href="#videos">Watch Films</a>
@@ -275,7 +291,7 @@
             <span class="pill">Mythology + SDGs</span>
             <span class="pill">Portfolio + pitch deck</span>
           </div>
-          <div class="trust-strip"><span>twofour54 Media Zone · Abu Dhabi</span><span>English medium</span><span>15th July cohort</span></div>
+          <div class="trust-strip"><span>twofour54 Media Zone · Abu Dhabi</span><span>English-led</span><span>Summer cohort · 15th July</span></div>
         </section>
         <aside class="hero-art" aria-label="Raayan Creator Labs visual">
           <img src="assets/raayan-hero.webp" alt="Raayan, the digital guide for Creator Labs, inside a cinematic AI production studio">
@@ -291,9 +307,9 @@
           <div><div class="eyebrow">Featured Videos</div><h2>Featured student and studio films.</h2></div>
         </div>
         <div class="grid three">
-          <a class="card" href="https://youtu.be/qHmW0iapdk0" target="_blank" rel="noreferrer">
+          <a class="card" href="https://youtu.be/ptxN8IgCkFU" target="_blank" rel="noreferrer">
             <div class="media"><img src="assets/raheed-thumb.webp" alt="Raheed film thumbnail"><span class="play">▶</span></div>
-            <div class="card-body"><div class="kicker">Cinematic POC · Vertical Format</div><h3>Raheed</h3><span class="card-link">Watch</span></div>
+            <div class="card-body"><div class="kicker">Cinematic POC · Vertical Format</div><h3>Raheed: Sage of Sands</h3><span class="card-link">Watch</span></div>
           </a>
           <a class="card" href="https://youtu.be/fa9m5Ypxx0A" target="_blank" rel="noreferrer">
             <div class="media"><img src="assets/wheelchair-thumb.webp" alt="Secret Life of a Wheelchair thumbnail"><span class="badge pill">Award</span><span class="play">▶</span></div>
@@ -313,9 +329,9 @@
           <div><div class="eyebrow">Production Slate</div><h2>Cinematic OTT series concepts in development.</h2></div>
         </div>
         <div class="grid three">
-          <a class="card poster-card" href="https://youtu.be/qHmW0iapdk0" target="_blank" rel="noreferrer">
+          <a class="card poster-card" href="https://youtu.be/ptxN8IgCkFU" target="_blank" rel="noreferrer">
             <div class="media"><img src="assets/production-slate.webp" alt="Raheed: Seeker of Dunes production slate"><span class="play">▶</span></div>
-            <div class="poster-info"><div class="kicker">Slate 01</div><h3>Raheed: Seeker of Dunes</h3><p>Cinematic POC · Vertical format.</p></div>
+            <div class="poster-info"><div class="kicker">Slate 01</div><h3>Raheed: Sage of Sands</h3><p>Cinematic POC · Vertical format.</p></div>
           </a>
           <article class="card poster-card">
             <div class="media"><img src="assets/mewar-king.webp" alt="Rise of the Mewar King poster"></div>
@@ -354,13 +370,14 @@
           <div class="stat-list">
             <div class="stat"><strong>12 × 60 min</strong><span>Story, characters, visuals, voice, animation and editing.</span></div>
             <div class="stat"><strong>Workflow</strong><span>Students use tools like Kling/Higgsfield externally, then organise scenes and edits systematically.</span></div>
-            <div class="stat"><strong>Output</strong><span>Short film, reel pack, certificate, portfolio showcase and simple pitch deck.</span></div>
+            <div class="stat"><strong>Output</strong><span>Cinematic AI animation short film, reel pack, certificate, portfolio showcase and cinematic pitch deck.</span></div>
+            <div class="stat"><strong>Support</strong><span>6 months post-program guidance for portfolio refinement, pitch deck polish and festival/project direction.</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section tight">
+    <section class="section tight meta-section">
       <div class="wrap">
         <div class="image-panel meta-stage">
           <div class="meta-copy">
@@ -383,24 +400,25 @@
             <div class="check">English-led live Creator Labs sessions</div>
             <div class="check">8–10 students per cohort</div>
             <div class="check">15th July cohort</div>
-            <div class="check">Film + reel pack + pitch deck output</div>
+            <div class="check">Cinematic AI animation short film + cinematic pitch deck</div>
+            <div class="check">6 months post-program guidance</div>
             <div class="check">WhatsApp confirmation after application</div>
           </div>
         </aside>
         <section class="form-card">
           <div class="eyebrow">Creator Labs Application</div>
-          <h3>Apply now for the 15th July cohort.</h3>
-          <p class="form-note" style="margin:10px 0 20px; max-width:620px;">After applying, we will contact you on WhatsApp to confirm timing and next steps.</p>
+          <h3>Apply now for the 15th July summer cohort.</h3>
+          <p class="form-note" style="margin:10px 0 20px; max-width:620px;">Summer intake for young creators during the school holiday period. After applying, we will contact you on WhatsApp to confirm timing and next steps.</p>
           <form id="creatorLabsForm">
             <div class="field"><label for="parentName">Parent name</label><input id="parentName" name="parentName" required autocomplete="name"></div>
             <div class="field"><label for="studentName">Student name</label><input id="studentName" name="studentName" required></div>
             <div class="field"><label for="studentAge">Student age</label><input id="studentAge" name="studentAge" type="number" min="8" max="19" required></div>
             <div class="field"><label for="city">City</label><input id="city" name="city" required maxlength="80" autocomplete="address-level2"></div>
             <div class="field"><label for="country">Country</label><select id="country" name="country" required></select></div>
-            <div class="field"><label for="whatsapp">WhatsApp number</label><div class="phone-grid"><input id="phoneCode" name="phoneCode" readonly aria-label="Country calling code"><input id="whatsapp" name="whatsapp" inputmode="tel" autocomplete="tel-national" placeholder="Number without country code" required maxlength="18"></div></div>
+            <div class="field"><label for="whatsapp">WhatsApp number</label><div class="phone-grid"><input id="phoneCode" name="phoneCode" readonly aria-label="Country calling code"><input id="whatsapp" name="whatsapp" inputmode="tel" autocomplete="tel-national" placeholder="WhatsApp number" required maxlength="18"></div></div>
             <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email" maxlength="120"></div>
             <div class="field visually-hidden" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
-            <div class="field full"><label for="timing">Preferred timing</label><select id="timing" name="timing" required><option value="">Select one</option><option>9:00 AM · Monday–Thursday</option><option>1:00 PM · Monday–Thursday</option><option>4:00 PM · Monday–Thursday</option></select></div>
+            <div class="field full"><label for="timing">Preferred timing</label><select id="timing" name="timing" required><option value="">Select one</option><option>9:00 AM · Monday–Thursday</option><option>1:00 PM · Monday–Thursday</option><option>4:00 PM · Monday–Thursday</option><option>Weekend batch · timing to be confirmed</option></select></div>
             <div class="field full"><label for="message">Message</label><textarea id="message" name="message" placeholder="Student interests, preferred batch, or any question before joining."></textarea></div>
             <div class="status" id="formStatus" role="status"></div>
             <div class="form-actions">
@@ -464,6 +482,7 @@
   <script type="module">
     const form = document.getElementById('creatorLabsForm');
     const statusEl = document.getElementById('formStatus');
+    const formLoadedAt = Date.now();
 
     // Later: add your Firebase web config as window.RVGEN_FIREBASE_CONFIG before this script,
     // add a Cloud Function URL as window.RVGEN_EMAIL_FUNCTION_URL for email notifications,
@@ -517,6 +536,7 @@
       const timing = document.getElementById('timing');
 
       if (honeypot.value.trim()) return false;
+      if (Date.now() - formLoadedAt < 3000) { statusEl.textContent = 'Please wait a moment before submitting.'; return false; }
       if (parentName.value.trim().length < 2) markInvalid(parentName, 'Please enter the parent name.');
       if (studentName.value.trim().length < 2) markInvalid(studentName, 'Please enter the student name.');
       const numericAge = Number(age.value);
@@ -529,7 +549,12 @@
       if (!emailOk) markInvalid(email, 'Please enter a valid email address.');
 
       const digits = whatsapp.value.replace(/\D/g, '');
-      if (digits.length < 7 || digits.length > 15) markInvalid(whatsapp, 'Please enter a valid WhatsApp number without country code.');
+      const selectedCode = phoneCodeInput.value;
+      if (selectedCode === '+971') {
+        if (!/^5\d{8}$/.test(digits)) markInvalid(whatsapp, 'For UAE, enter 9 digits starting with 5, without +971.');
+      } else if (digits.length < 7 || digits.length > 15) {
+        markInvalid(whatsapp, 'Please enter a valid WhatsApp number without country code.');
+      }
 
       const invalid = form.querySelector('.invalid');
       if (invalid) {
@@ -556,13 +581,15 @@
 
     async function sendEmailNotification(payload) {
       if (!emailFunctionUrl) return { skipped: true };
-      await fetch(emailFunctionUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+      const response = await fetch(emailFunctionUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+      if (!response.ok) throw new Error('Email function failed');
       return { ok: true };
     }
 
     async function sendBackupNotification(payload) {
       if (!backupFormEndpoint) return { skipped: true };
-      await fetch(backupFormEndpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(payload) });
+      const response = await fetch(backupFormEndpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(payload) });
+      if (!response.ok) throw new Error('Formspree submission failed');
       return { ok: true };
     }
 
@@ -584,7 +611,7 @@
         sendEmailNotification(payload),
         sendBackupNotification(payload)
       ]);
-      const ok = results.some((result) => result.status === 'fulfilled');
+      const ok = results.some((result) => result.status === 'fulfilled' && result.value && result.value.ok === true);
       if (ok) {
         statusEl.textContent = 'Application received. We will contact you on WhatsApp to confirm timing and next steps.';
         form.reset();

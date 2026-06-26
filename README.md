@@ -1,10 +1,16 @@
-# RVNextGEN Homepage V8
+# RVNextGEN Homepage V11
 
-Firebase web config has been inserted.
+Final launch patch includes:
+- Raheed English YouTube link updated.
+- Weekend batch option added.
+- Summer cohort / 15th July positioning.
+- 6 months post-program guidance added.
+- Cleaner twofour54 trust chips.
+- Stronger WhatsApp validation and false-success form bug fixed.
+- Formspree endpoint active as backup email alert.
+- OG image and favicon added for link previews.
 
-Next Firebase setup needed:
-1. Create Cloud Firestore database.
-2. Add write-only rules for creatorLabApplications.
-3. Optional email notification: configure a Cloud Function or backup endpoint.
+Deploy with: firebase deploy --only hosting
 
-Collection used by form: creatorLabApplications
+
+V11 fixes: spacing around MetaHuman section, mobile founder layout, cinematic output wording.
