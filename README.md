@@ -14,3 +14,12 @@ Deploy with: firebase deploy --only hosting
 
 
 V11 fixes: spacing around MetaHuman section, mobile founder layout, cinematic output wording.
+
+
+V12 update: removed the image background from the 3D Digital Avatar & MetaHuman section for a cleaner text-only presentation.
+
+
+V13 update: completely replaced the Part 2 section with a text-only Launching Soon card. No image background remains.
+
+
+V14 update: made Part 2 MetaHuman section a sleeker full-width strip with reduced visual weight.
